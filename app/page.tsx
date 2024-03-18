@@ -3,6 +3,7 @@ import Image from 'next/image'
 import bg from '@/public/background/home-bg.webp'
 import dynamic from 'next/dynamic'
 import RenderModel from '@/components/RenderModel'
+import Navigation from '@/components/navigation'
 // import { Wizard } from '@/components/models/Wizard'
 const Wizard = dynamic(() => import('@/components/models/Wizard'), {
   ssr: false,
@@ -21,7 +22,7 @@ export default function Home() {
       />
 
       <div className="w-full h-screen">
-        {/* <Navigation /> */}
+        <Navigation />
         <RenderModel>
           <Wizard />
         </RenderModel>
