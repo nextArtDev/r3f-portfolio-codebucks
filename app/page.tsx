@@ -4,6 +4,7 @@ import bg from '@/public/background/home-bg.webp'
 import dynamic from 'next/dynamic'
 import RenderModel from '@/components/RenderModel'
 import Navigation from '@/components/navigation'
+import FireFliesBackground from '@/components/FireFliesBackground'
 // import { Wizard } from '@/components/models/Wizard'
 const Wizard = dynamic(() => import('@/components/models/Wizard'), {
   ssr: false,
@@ -26,6 +27,7 @@ export default function Home() {
         <RenderModel>
           <Wizard />
         </RenderModel>
+        <FireFliesBackground />
       </div>
     </main>
   )
