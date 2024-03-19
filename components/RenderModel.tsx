@@ -13,12 +13,13 @@ const RenderModel = ({
 }) => {
   return (
     <Canvas
-      className={clsx('w-screen h-screen -z-10 relative', className)}
+      className={clsx('w-screen h-screen z-10 relative', className)}
       shadows={false}
       dpr={[1, 2]}
 
       // dpr is the device pixel ratio. Here we are setting it to 1 and 2 for retina displays to prevent blurriness in the model rendering on high resolution screens.
     >
+      <OrbitControls />
       <Suspense fallback={null}>{children}</Suspense>
 
       <Environment preset="forest" />

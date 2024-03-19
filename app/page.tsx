@@ -5,8 +5,12 @@ import dynamic from 'next/dynamic'
 import RenderModel from '@/components/RenderModel'
 import Navigation from '@/components/navigation'
 import FireFliesBackground from '@/components/FireFliesBackground'
+// import Staff from '@/components/models/Staff'
 // import { Wizard } from '@/components/models/Wizard'
-const Wizard = dynamic(() => import('@/components/models/Wizard'), {
+// const Wizard = dynamic(() => import('@/components/models/Wizard'), {
+//   ssr: false,
+// })
+const Staff = dynamic(() => import('@/components/models/Staff'), {
   ssr: false,
 })
 
@@ -25,7 +29,8 @@ export default function Home() {
       <div className="w-full h-screen">
         <Navigation />
         <RenderModel>
-          <Wizard />
+          {/* <Wizard /> */}
+          <Staff />
         </RenderModel>
         <FireFliesBackground />
       </div>

@@ -87,7 +87,7 @@ export const projectsData = [
     date: '2022-02-14',
     demoLink: 'https://mindfulmoments.example.com',
   },
-] as const
+]
 
 export const BtnList = [
   { label: 'Home', link: '/', icon: 'home', newTab: false },
