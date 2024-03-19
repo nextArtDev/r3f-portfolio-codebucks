@@ -13,7 +13,7 @@ const RenderModel = ({
 }) => {
   return (
     <Canvas
-      className={clsx('w-screen h-screen z-10 relative', className)}
+      className={clsx('w-screen h-screen -z-10 relative', className)}
       shadows={false}
       dpr={[1, 2]}
 
