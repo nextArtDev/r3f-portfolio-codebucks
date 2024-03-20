@@ -19,8 +19,8 @@ export default function Wizard(props: any) {
 
   useFrame((state) => {
     if (modelRef.current) {
-      modelRef.current.position.y =
-        -1.4 + Math.sin(state.clock.elapsedTime * 0.3) * 2.5
+      // modelRef.current.position.y =
+      // -1.4 + Math.sin(state.clock.elapsedTime * 0.3) * 2.5
       modelRef.current.rotation.y += 0.003
       // modelRef.current.rotation.y += Math.cos(state.clock.elapsedTime) * 0.003
       // modelRef.current.rotation.x =
@@ -29,7 +29,7 @@ export default function Wizard(props: any) {
   })
   return (
     <>
-      <Text
+      {/* <Text
         // font={'/fonts/PPNeueMontreal-Bold.otf'}
         position={[0, 0, -1]}
         fontSize={1.5}
@@ -39,7 +39,7 @@ export default function Wizard(props: any) {
         scale={0.7}
       >
         Coffee Menu
-      </Text>
+      </Text> */}
 
       <group
         // scale={viewport.width * 2}

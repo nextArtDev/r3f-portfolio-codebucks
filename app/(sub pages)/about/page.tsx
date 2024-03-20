@@ -1,16 +1,17 @@
-import Image from "next/image";
-import bg from "../../../../public/background/about-background.png";
-import RenderModel from "@/components/RenderModel";
+import Image from 'next/image'
+import bg from '@/public/background/about-background.png'
+import RenderModel from '@/components/RenderModel'
 // import HatModel from "@/components/models/HatModel";
-import AboutDetails from "@/components/about";
-import dynamic from "next/dynamic";
-const HatModel = dynamic(() => import("@/components/models/HatModel"), {
+import AboutDetails from '@/components/about'
+import dynamic from 'next/dynamic'
+import FireFliesBackground from '@/components/FireFliesBackground'
+const Wizard = dynamic(() => import('@/components/models/Wizard'), {
   ssr: false,
-});
+})
 
 export const metadata = {
-  title: "About",
-};
+  title: 'About',
+}
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
 
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
         <RenderModel>
-          <HatModel />
+          <Wizard />
         </RenderModel>
       </div>
 
@@ -39,8 +40,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-
+      {/* <FireFliesBackground /> */}
       <AboutDetails />
     </>
-  );
+  )
 }
