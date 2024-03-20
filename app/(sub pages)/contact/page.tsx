@@ -1,10 +1,10 @@
-import Image from "next/image";
-import bg from "../../../../public/background/contact-background.png";
-import Form from "@/components/contact/Form";
+import Image from 'next/image'
+import bg from '@/public/background/contact-background.png'
+import Form from '@/components/contact/Form'
 
 export const metadata = {
-  title: "Contact",
-};
+  title: 'Contact',
+}
 
 export default function Contact() {
   return (
@@ -34,5 +34,5 @@ export default function Contact() {
         <Form />
       </article>
     </>
-  );
+  )
 }
