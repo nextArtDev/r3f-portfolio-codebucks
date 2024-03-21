@@ -32,7 +32,6 @@ export default function Home() {
           {/* <Wizard /> */}
           <Staff />
         </RenderModel>
-        <FireFliesBackground />
       </div>
     </main>
   )
