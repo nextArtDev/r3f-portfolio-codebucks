@@ -26,12 +26,9 @@ const Navigation = () => {
   const angleIncrement = 360 / BtnList.length
   const [width, height] = useWindowSize()
   const size: number | undefined = width
-  let isLarge: boolean
-  let isMedium: boolean
-  if (size) {
-    const isLarge = size >= 1024
-    const isMedium = size >= 768
-  }
+
+  const isLarge = size >= 1024
+  const isMedium = size >= 768
 
   return (
     <div className="w-full fixed h-screen flex items-center justify-center">
