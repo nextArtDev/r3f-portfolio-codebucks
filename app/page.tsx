@@ -5,14 +5,19 @@ import dynamic from 'next/dynamic'
 import RenderModel from '@/components/RenderModel'
 import Navigation from '@/components/navigation'
 import FireFliesBackground from '@/components/FireFliesBackground'
+// import Wizard from '@/components/models/Wizard'
+import Female from '@/components/models/Female'
 // import Staff from '@/components/models/Staff'
 // import { Wizard } from '@/components/models/Wizard'
 // const Wizard = dynamic(() => import('@/components/models/Wizard'), {
 //   ssr: false,
 // })
-const Staff = dynamic(() => import('@/components/models/Staff'), {
-  ssr: false,
-})
+// const Staff = dynamic(() => import('@/components/models/Staff'), {
+//   ssr: false,
+// })
+// const Female = dynamic(() => import('@/components/models/Female'), {
+//   ssr: false,
+// })
 
 export default function Home() {
   return (
@@ -30,7 +35,8 @@ export default function Home() {
         <Navigation />
         <RenderModel>
           {/* <Wizard /> */}
-          <Staff />
+          {/* <Staff /> */}
+          <Female />
         </RenderModel>
       </div>
     </main>
